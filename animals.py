@@ -50,12 +50,10 @@ class Monkey(Pet):
         Pet.__init__(self, name="Jack")
         self.sound = "howwl"
 pick = int(input("SELECT THE PET\n1)Birdie\n2)Mammal\n"))
-if (pick == 2):
-    p1 = Monkey()
-    p2 = Parrot()
-elif (pick == 1):
-    p2 = Monkey()
+if (pick == 1):
     p1 = Parrot()
+elif (pick == 2):
+    p1 = Monkey()
 else:
     print("WRONG INPUT")
 x="y"
@@ -69,6 +67,5 @@ while x=="y" or x=="Y":
     elif (cmd == 3):
         p1.feed()
     p1.clock_tick()
-    p2.clock_tick()
     x=input("DO YOU WANT TO CONTINUE(x/y)")
 
